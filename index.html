@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Basic Meta -->
+<meta name="title" content="Kree8ve Studio – Crafting Ideas Into Virtual Reality">
+<meta name="description" content="We help brands grow through creative design, powerful video, and smart strategy. Let’s make your ideas real.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kree8ve.in/"> <!-- Replace with actual live URL -->
+<meta property="og:title" content="Kree8ve Studio – Crafting Ideas Into Virtual Reality">
+<meta property="og:description" content="We help brands grow through creative design, powerful video, and smart strategy. Let’s make your ideas real.">
+<meta property="og:image" content="https://kree8ve.in/assets/preview.jpg"> <!-- Preview image URL -->
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kree8ve.in/">
+<meta property="twitter:title" content="Kree8ve Studio – Crafting Ideas Into Virtual Reality">
+<meta property="twitter:description" content="We help brands grow through creative design, powerful video, and smart strategy. Let’s make your ideas real.">
+<meta property="twitter:image" content="https://kree8ve.in/assets/preview.jpg">
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kree8ve Studio – Crafting Ideas Into Virtual Reality</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<!-- HERO SECTION -->
+  <!-- HEADER BAR -->
+<header class="header">
+  <div class="logo-area">
+    <img src="assets/logo.png" alt="Kree8ve Logo" />
+  </div>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+<section class="hero" id="home">
+>
+    <div class="blur-bg"></div>
+
+    <div class="hero-content">
+      <h1>Crafting Ideas into <span class="highlight">Virtual Reality</span></h1>
+      <p>We help you grow your brand with creative design, powerful videos, and smart strategy.</p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="bubble-btn">Explore Services</a>
+        <a href="#connect" class="bubble-btn alt">Let’s Connect</a>
+      </div>
+    </div>
+    
+  </section>
+  
+  <!-- ABOUT SECTION -->
+<section class="about" id="about"> <data-aos="fade-up">
+  <div class="about-content">
+    <h2>About Kree8ve Studio</h2>
+    <p>We’re a creative agency that turns ideas into digital experiences. From graphic design to video production, we help brands stand out in the digital world.</p>
+  </div>
+  </section>
+  
+  <!-- SERVICES SECTION -->
+<section class="services" id="services" data-aos="fade-up">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <h3>Graphic Design</h3>
+      <p>Creative posters, branding kits, and visuals that speak louder than words.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Video Production</h3>
+      <p>Engaging reels, cinematic edits, and business videos that tell your story.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Social Media Management</h3>
+      <p>Consistent content, audience engagement & full profile handling for growth.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Facebook/Google Ads</h3>
+      <p>Paid ads strategy, creatives, and results-driven campaigns.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Branding & Strategy</h3>
+      <p>Logo, colors, identity, positioning — build a brand, not just presence.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Custom Solutions</h3>
+      <p>Every brand is unique — we offer tailored packages to suit your needs.</p>
+    </div>
+
+  </div>
+</section>
+<!-- CONNECT SECTION -->
+<section class="connect" id="connect" data-aos="zoom-in">
+  <div class="connect-content">
+    <h2>Let’s Connect</h2>
+    <p>Have a project in mind? Let’s turn your ideas into virtual reality.</p>
+
+    <div class="connect-buttons">
+      <a href="https://wa.me/919529503827" class="bubble-btn">Message on WhatsApp</a>
+      <a href="tel:9529503827" class="bubble-btn alt">Call Now</a>
+    </div>
+  </div>
+</section>
+
+
+
+</section>
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true      // Animate only once
+  });
+</script>
+<script>
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="mailto:kree8ve.studio@gmail.com">📧 kree8ve.studio@gmail.com</a>
+      <a href="tel:9529503827">📞 9529503827</a>
+      <a href="https://instagram.com/kree8ve.studio" target="_blank">📷 @kree8ve.studio</a>
+    </div>
+    <p class="copyright">© 2025 Kree8ve Studio. All rights reserved.</p>
+  </div>
+</footer>
+<!-- LIVE REVIEWS BUBBLE -->
+<div class="live-review" id="liveReview">
+  <span id="reviewMessage">⭐ Priya: Loved the branding package!</span>
+</div>
+<script>
+  const reviews = [
+    "⭐ Priya: Loved the branding package!",
+    "🔥 Rohan: Killer video edit. 5/5!",
+    "💡 Neha: Design was on-point!",
+    "🎯 Arjun: Our IG is growing thanks to Kree8ve.",
+    "📈 Ravi: Business looks premium now!",
+    "🎥 Aarti: Amazing reels, got 12k views!",
+    "🧠 Manish: Marketing strategy is working great!",
+    "🚀 Sonam: Launch campaign = 10/10!"
+  ];
+
+  const reviewEl = document.getElementById("liveReview");
+  const messageEl = document.getElementById("reviewMessage");
+
+  let index = 0;
+
+  function showReview() {
+    messageEl.textContent = reviews[index];
+    reviewEl.style.display = "block";
+    index = (index + 1) % reviews.length;
+  }
+
+  setTimeout(() => {
+    showReview();
+    setInterval(showReview, 9000);
+  }, 2000);
+</script>
+<!-- ✅ FINAL KREEBOT v3 – Fully Working -->
+
+<!-- CHAT BUBBLE -->
+<div id="chatbot-bubble" onclick="toggleChat()">💬</div>
+
+<!-- CHAT WINDOW -->
+<div id="chatbot-window">
+  <div class="chat-header">KreeBot 🤖</div>
+  <div class="chat-body" id="chat-body">
+    <div class="bot-msg">Hi! I'm <strong>KreeBot</strong>, your creative assistant 👋</div>
+    <div class="bot-msg">What are you looking for today?</div>
+    <div class="btn-options">
+      <button onclick="userReply('Graphic Design')">🎨 Graphic Design</button>
+      <button onclick="userReply('Video Editing')">🎬 Video Editing</button>
+      <button onclick="userReply('Social Media Management')">📱 Social Media</button>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Audio -->
+<audio id="ping" preload="auto">
+  <source src="https://www.soundjay.com/buttons/sounds/button-09.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- ✅ Styling -->
+<style>
+  #chatbot-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid #00ffff;
+    padding: 12px 16px;
+    border-radius: 50px;
+    color: #00ffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: 0 0 10px #00ffff44;
+  }
+
+  #chatbot-window {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: #111111cc;
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00ffff33;
+    color: white;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .chat-header {
+    background: #0f0f0f;
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #00ffff44;
+  }
+
+  .chat-body {
+    padding: 1rem;
+    max-height: 280px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    scroll-behavior: smooth;
+  }
+
+  .bot-msg {
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+  }
+
+  .btn-options button {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-right: 6px;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  input.chat-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    outline: none;
+  }
+</style>
+
+<!-- ✅ Script -->
+<script>
+  function playPing() {
+    const ping = document.getElementById('ping');
+    ping.currentTime = 0;
+    ping.play().catch(e => console.log("Audio Blocked:", e));
+  }
+
+  function toggleChat() {
+    const chat = document.getElementById('chatbot-window');
+    chat.style.display = chat.style.display === 'block' ? 'none' : 'block';
+    playPing(); // trigger audio permission
+  }
+
+  function userReply(service) {
+    const chat = document.getElementById('chat-body');
+    playPing();
+    chat.innerHTML += `<div class='bot-msg'>Great! You need help with <strong>${service}</strong>?</div>`;
+    chat.scrollTop = chat.scrollHeight;
+    setTimeout(() => {
+      playPing();
+      chat.innerHTML += `<div class='bot-msg'>What’s your name?</div>
+      <input type='text' id='username' class='chat-input' placeholder='Type your name...' onkeypress="if(event.key==='Enter'){getName('${service}')}" autofocus>`;
+      chat.scrollTop = chat.scrollHeight;
+    }, 800);
+  }
+
+  function getName(service) {
+    const name = document.getElementById('username').value;
+    const chat = document.getElementById('chat-body');
+    chat.innerHTML += `<div class='bot-msg'>Thanks, ${name}! Could you also share your phone number?</div>
+      <input type='text' id='userphone' class='chat-input' placeholder='Enter phone number...' onkeypress="if(event.key==='Enter'){finalStep('${service}', '${name}')}" autofocus>`;
+    chat.scrollTop = chat.scrollHeight;
+    document.getElementById('username').style.display = 'none';
+  }
+
+  function finalStep(service, name) {
+    const phone = document.getElementById('userphone').value;
+    const chat = document.getElementById('chat-body');
+    playPing();
+    chat.innerHTML += `<div class='bot-msg'>Awesome ${name}! We'll reach out to you at ${phone} regarding <strong>${service}</strong> 🙌</div>`;
+    chat.innerHTML += `<div class='bot-msg'>Meanwhile, explore our work:</div>
+      <div class='btn-options'>
+        <button onclick="window.open('https://www.instagram.com/kree8ve.studio', '_blank')">📷 View Instagram</button>
+        <button onclick="window.open('https://wa.me/919529503827', '_blank')">💬 Message on WhatsApp</button>
+      </div>`;
+    document.getElementById('userphone').style.display = 'none';
+    chat.scrollTop = chat.scrollHeight;
+  }
+</script>
+
+
+</body>
+</html>
