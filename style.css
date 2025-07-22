@@ -79,19 +79,6 @@ header {
   font-weight: 500;
 }
 
-/* Hamburger button */
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  color: cyan;
-  cursor: pointer;
-}
-.hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: #00ffff;
-}
 /* HEADER */
 header {
   background-color: #111;
