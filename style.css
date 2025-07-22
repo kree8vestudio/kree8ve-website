@@ -20,6 +20,13 @@ header {
   z-index: 999;
   padding: 10px 20px;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
 
 .nav-container {
   display: flex;
@@ -31,6 +38,11 @@ header {
   height: 38px;
   max-width: 150px;
 }
+.logo img {
+  max-height: 40px;
+  width: auto;
+}
+
 
 /* Nav links */
 #nav-links {
@@ -44,6 +56,24 @@ header {
   font-size: 1rem;
   font-weight: 500;
 }
+#nav-links {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #111;
+  padding: 15px 20px;
+  display: none;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+  z-index: 1000;
+}
+
+#nav-links.show {
+  display: flex;
+}
+
 
 /* Hamburger button */
 .hamburger {
@@ -568,5 +598,24 @@ p {
   padding: 0.8rem 1.6rem;
   font-size: 0.95rem;
 }
+.hamburger {
+  font-size: 26px;
+  margin-right: 10px;
+  color: #00ffff;
+  cursor: pointer;
+  display: block;
+}
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 40px;
+  }
+
+  #nav-links a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+
+
 
 
