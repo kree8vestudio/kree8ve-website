@@ -92,6 +92,46 @@ header {
   cursor: pointer;
   color: #00ffff;
 }
+/* HEADER */
+header {
+  background-color: #111;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#nav-links a:hover {
+  color: #00ffff;
+}
+
+/* ✅ Remove hamburger styles if any */
+.hamburger {
+  display: none !important;
+}
+
 
 #nav-links {
   display: flex;

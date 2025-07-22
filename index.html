@@ -34,7 +34,6 @@
   <header>
   <div class="nav-container">
     <img src="assets/logo.png" alt="Kree8ve Logo" class="logo" />
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <nav id="nav-links">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
@@ -43,6 +42,7 @@
     </nav>
   </div>
 </header>
+
 
   
 <!-- HERO SECTION -->
@@ -353,14 +353,6 @@
       </div>`;
     document.getElementById('userphone').style.display = 'none';
     chat.scrollTop = chat.scrollHeight;
-  }
-</script>
-
-
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById("nav-links");
-    nav.classList.toggle("show");
   }
 </script>
 </body>
