@@ -11,6 +11,76 @@ body {
   color: #ffffff;
   overflow-x: hidden;
 }
+/* Base styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f0f0f;
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 38px;
+  max-width: 150px;
+}
+
+/* Nav links */
+#nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#nav-links a {
+  color: cyan;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: cyan;
+  cursor: pointer;
+}
+
+/* ✅ Mobile Styles */
+@media (max-width: 768px) {
+  .logo {
+    height: 30px;
+  }
+
+  #nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #111;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffff44;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -29,6 +99,12 @@ body {
 .logo-area img {
   width: 100px;
 }
+@media (max-width: 768px) {
+  .logo img {
+    width: 100px;
+  }
+}
+
 
 .nav-links {
   display: flex;
