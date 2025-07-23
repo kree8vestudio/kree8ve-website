@@ -461,6 +461,115 @@ header {
     padding-left: 0.5rem;
   }
 }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #0f0f0f;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Flex */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+/* Nav Links */
+#nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#nav-links a:hover {
+  color: white;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #00ffff;
+  cursor: pointer;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links a {
+    padding: 0.6rem 0;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  header {
+    padding: 1rem 1.5rem;
+  }
+}
+/* Outer navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Inner wrapper with logo + nav */
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 73rem;  /* 🔥 controls spacing between logo and nav */
+}
+
+/* Nav links */
+#nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+
 
 
 
