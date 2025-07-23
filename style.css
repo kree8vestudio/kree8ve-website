@@ -685,5 +685,59 @@ p {
   padding: 0.8rem 1.6rem;
   font-size: 0.95rem;
 }
+/* ✅ NAVIGATION HEADER (Final Clean Version) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #0f0f0f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+/* Nav links */
+#nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#nav-links a:hover {
+  color: white;
+}
+
+/* ✅ MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 110px;
+    margin-bottom: 10px;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
 
 
