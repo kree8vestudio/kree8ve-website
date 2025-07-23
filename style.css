@@ -461,70 +461,58 @@ header {
     padding-left: 0.5rem;
   }
 }
-header {
-  background: #0f0f0f;
-  padding: 1rem 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.logo-area {
+  flex-shrink: 0;
 }
 
 .logo-area img {
-  width: 130px;
+  width: 120px;
   height: auto;
 }
 
 #nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-left: auto;
 }
 
 #nav-links a {
-  color: #00ffff;
   text-decoration: none;
+  color: #00ffff;
   font-weight: 500;
   font-size: 1rem;
 }
 
 #nav-links a:hover {
-  color: white;
+  color: #ffffff;
 }
 
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: #00ffff;
-  cursor: pointer;
-}
-
-/* 📱 Mobile */
+/* ✅ Responsive */
 @media (max-width: 768px) {
-  #nav-links {
-    display: none;
+  .nav-container {
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #111;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00ffff44;
+    align-items: flex-start;
   }
 
-  #nav-links.show {
-    display: flex;
+  .logo-area {
+    margin-bottom: 10px;
   }
 
-  .hamburger {
-    display: block;
+  #nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
   }
 }
+
 
 
 
