@@ -685,7 +685,7 @@ p {
   padding: 0.8rem 1.6rem;
   font-size: 0.95rem;
 }
-/* ✅ NAVIGATION HEADER (Final Clean Version) */
+/* ✅ FINAL HEADER NAVIGATION */
 header {
   display: flex;
   justify-content: space-between;
@@ -694,15 +694,17 @@ header {
   background: #0f0f0f;
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo img {
-  width: 130px;
+  width: 120px;
   height: auto;
 }
 
-/* Nav links */
+/* Navigation Links */
 #nav-links {
   display: flex;
   gap: 1.5rem;
@@ -720,24 +722,32 @@ header {
   color: white;
 }
 
-/* ✅ MOBILE RESPONSIVE */
+/* ✅ Mobile Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
   }
 
   .logo img {
-    width: 110px;
-    margin-bottom: 10px;
+    width: 100px;
   }
 
   #nav-links {
     flex-direction: column;
-    align-items: flex-start;
     gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
   }
+
+  #nav-links a {
+    padding-left: 0.5rem;
+  }
+}
 
 
 
