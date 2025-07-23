@@ -500,17 +500,24 @@ header {
 /* ✅ Mobile Responsive */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
 
   .logo {
-    margin-bottom: 0.5rem;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  .logo img {
-    width: 100px;
-  }
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
 
   #nav-links {
     flex-direction: column;
@@ -575,11 +582,13 @@ header {
 
 /* Hamburger icon */
 .hamburger {
-  font-size: 2rem;
+  display: block;
+  font-size: 28px;
   color: #00ffff;
   cursor: pointer;
-  z-index: 1001;
+  align-self: center;
 }
+
 
 /* Sidebar */
 .sidebar {
