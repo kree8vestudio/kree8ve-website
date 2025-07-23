@@ -560,7 +560,7 @@ header {
 .nav-content {
   display: flex;
   align-items: center;
-  gap: 73rem;  /* 🔥 controls spacing between logo and nav */
+  gap: 50rem;  /* 🔥 controls spacing between logo and nav */
 }
 
 /* Nav links */
