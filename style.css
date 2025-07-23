@@ -762,6 +762,31 @@ header {
 
 /* Mobile Only */
 @media (max-width: 768px) {
+  .logo {
+    display: flex;
+    justify-content: flex-start; /* 👈 Left aligned */
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo img {
+    margin-left: 0; /* Remove default spacing */
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
   .hamburger {
     display: block;
   }
