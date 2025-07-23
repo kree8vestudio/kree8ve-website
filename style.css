@@ -680,6 +680,92 @@ header {
 .overlay.show {
   display: block;
 }
+/* Default Header */
+.main-header {
+  background: #0f0f0f;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area img {
+  width: 120px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  font-size: 1.8rem;
+  color: #00ffff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  padding: 2rem 1.5rem;
+  box-shadow: -2px 0 10px rgba(0, 255, 255, 0.1);
+  z-index: 1002;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+.sidebar a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Mobile Only */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .logo-area img {
+    width: 100px;
+  }
+}
+
 
 
 

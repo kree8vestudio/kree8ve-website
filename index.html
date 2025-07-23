@@ -31,6 +31,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+ 
+
+<!-- Sidebar menu (mobile only) -->
+<div class="sidebar" id="mobileSidebar">
+  <a href="#home" onclick="closeSidebar()">Home</a>
+  <a href="#services" onclick="closeSidebar()">Services</a>
+  <a href="#about" onclick="closeSidebar()">About</a>
+  <a href="#connect" onclick="closeSidebar()">Connect</a>
+</div>
+
+<!-- Overlay to click outside -->
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
   <!-- HEADER -->
 <header>
   <div class="logo">
@@ -395,5 +408,17 @@
     link.addEventListener("click", closeSidebar);
   });
 </script>
+<script>
+  function toggleSidebar() {
+    document.getElementById("mobileSidebar").classList.toggle("show");
+    document.getElementById("overlay").classList.toggle("show");
+  }
+
+  function closeSidebar() {
+    document.getElementById("mobileSidebar").classList.remove("show");
+    document.getElementById("overlay").classList.remove("show");
+  }
+</script>
+
 </body>
 </html>
