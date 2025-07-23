@@ -507,19 +507,11 @@ header {
   color: white;
 }
 
-/* Hamburger Button */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: #00ffff;
-  cursor: pointer;
-}
+
 
 /* ✅ Responsive */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+
 
   #nav-links {
     display: none;
