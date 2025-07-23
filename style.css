@@ -489,30 +489,6 @@ header {
   height: auto;
 }
 
-/* Nav Links */
-#nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-#nav-links a {
-  text-decoration: none;
-  color: #00ffff;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-#nav-links a:hover {
-  color: white;
-}
-/* Outer navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* Inner wrapper with logo + nav */
 .nav-content {
   display: flex;
