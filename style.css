@@ -224,6 +224,68 @@ p {
   background: #ffffff;
   color: #0f0f0f;
 }
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #0f0f0f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 130px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #00ffff;
+  cursor: pointer;
+}
+
+/* SIDEBAR MENU */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  height: 100vh;
+  width: 250px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.sidebar a {
+  color: #00ffff;
+  text-decoration: none;
+  padding: 1rem 0;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+/* SHOW SIDEBAR */
+.sidebar.show {
+  right: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+  }
+}
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero h1 {
