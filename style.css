@@ -125,10 +125,7 @@ header {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+
 
   #nav-links {
     display: none;
@@ -153,7 +150,7 @@ header {
     padding: 10px 0;
     font-size: 16px;
   }
-}
+
 
 
 /* ✅ Mobile Styles */
@@ -179,9 +176,7 @@ header {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
+ 
 }
 @media (max-width: 768px) {
   header {
@@ -268,12 +263,7 @@ nav a {
   font-weight: 500;
 }
 
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  color: cyan;
-  cursor: pointer;
-}
+
 
 /* 📱 Responsive Styles */
 @media (max-width: 768px) {
@@ -292,9 +282,7 @@ nav a {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
+  
 }
 
 
