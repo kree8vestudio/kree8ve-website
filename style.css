@@ -762,28 +762,18 @@ header {
 
 /* Mobile Only */
 @media (max-width: 768px) {
+  .logo img {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100px; /* ya jitna size chahiye ho */
+  }
+
   .logo {
     display: flex;
-    justify-content: flex-start; /* 👈 Left aligned */
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-  }
-
-  .logo img {
-    margin-left: 0; /* Remove default spacing */
-  }
-
-  .hamburger {
-    position: absolute;
-    right: 20px;
-    top: 18px;
-  }
-
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
