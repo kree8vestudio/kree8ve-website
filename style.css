@@ -495,67 +495,7 @@ header {
   align-items: center;
   gap: 50rem;  /* 🔥 controls spacing between logo and nav */
 }
-/* ✅ HEADER BASE */
-.main-header {
-  background: #0f0f0f;
-  padding: 1rem 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-}
 
-/* ✅ FLEX WRAPPER */
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* ✅ LOGO STYLE */
-.logo img {
-  width: 130px;
-  height: auto;
-}
-
-/* ✅ NAV LINKS */
-#nav-links {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-#nav-links a {
-  text-decoration: none;
-  color: #00ffff;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-#nav-links a:hover {
-  color: white;
-}
-
-/* ✅ RESPONSIVE — SHOW LINKS ALWAYS */
-@media (max-width: 768px) {
-  #nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .nav-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo img {
-    width: 100px;
-  }
-}
 
 
 
