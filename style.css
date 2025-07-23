@@ -783,6 +783,51 @@ header {
   color: #00ffff;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: #00ffff;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  /* Hide nav menu by default */
+  nav#nav-links {
+    display: none;
+  }
+
+  /* Optional: show nav when toggled */
+  nav#nav-links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: #111;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ffff66;
+  }
+}
+
 
 
 

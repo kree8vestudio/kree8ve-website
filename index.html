@@ -419,6 +419,22 @@
     document.getElementById("overlay").classList.remove("show");
   }
 </script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
+</script>
+
 
 </body>
 </html>
