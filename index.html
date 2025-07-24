@@ -434,6 +434,25 @@
     }
   });
 </script>
+<script>
+  let lastScrollTop = 0;
+  const navHeader = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+      navHeader.style.transform = "translateY(-100%)";
+    } else {
+      navHeader.style.transform = "translateY(0)";
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+
+
 
 
 </body>
